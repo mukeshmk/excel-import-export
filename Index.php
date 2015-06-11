@@ -14,7 +14,7 @@
 
 </body>
 
-<form name="loginform" action="login_exec.php" method="post">
+<form name="loginform" action="login_exec.php" method="post" autocomplete="off">
 <table width="309" border="0" align="center" cellpadding="2" cellspacing="5">
   <tr>
     <td colspan="2">
@@ -37,7 +37,7 @@
   </tr>
   <tr>
     <td><div align="right">Password</div></td>
-    <td><input name="password" type="text" /></td>
+    <td><input name="password" type="password" /></td>
   </tr>
   <tr>
     <td><div align="right"></div></td>
