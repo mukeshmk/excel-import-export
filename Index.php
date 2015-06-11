@@ -11,7 +11,7 @@
 <html>
 <body>
 
-<h1 style="color:blue">My Intern</h1>
+<h1 style="color:blue" align="center">My Intern</h1>
 
 </body>
 
