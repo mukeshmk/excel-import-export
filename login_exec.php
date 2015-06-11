@@ -26,5 +26,31 @@
 	$username = clean($_POST['username']);
 	$password = clean($_POST['password']);
  
+	//Input Validations
+	if($username == '') 
+	{
+		$errmsg_arr[] = 'Username missing';
+		$errflag = true;
+	}
+	if($password == '') 
+	{
+		$errmsg_arr[] = 'Password missing';
+		$errflag = true;
+	}
+ 
+	//If there are input validations, redirect back to the login form
+	if($errflag) 
+	{
+		$_SESSION['ERRMSG_ARR'] = $errmsg_arr;
+		session_write_close();
+		header("location: index.php");
+		exit();
+	}
+ 
+	//Create query
+	$qry="SELECT * FROM member WHERE username='$username' AND password='$password'";
+	$result=mysql_query($qry);
+ 
+	//Check whether the query was successful or not
 	
 ?>
