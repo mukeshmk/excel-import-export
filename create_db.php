@@ -5,10 +5,10 @@
 		echo "Failed to connect to MySQL: " . mysqli_connect_error();
 	}
 
-	$createdb="CREATE DATABASE simple_login;";
+	$createdb="CREATE DATABASE my_intern;";
 	$crate1=mysqli_query($connect,$createdb);
 
-	$c="USE simple_login;";
+	$c="USE my_intern;";
 	$c1=mysqli_query($connect,$c);
 
 	$qry="CREATE TABLE member

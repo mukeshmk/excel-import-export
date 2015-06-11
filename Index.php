@@ -1,3 +1,4 @@
+<?php require 'create_db.php' ?>
 <?php
 	//Start session
 	session_start();	
