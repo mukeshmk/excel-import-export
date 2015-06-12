@@ -10,9 +10,12 @@
 
 <html>
 <body>
-
-<h1 style="color:blue" align="center">My Intern</h1>
-
+	<title>Hitachi Solutions</title>
+<div style="text-align: center;">
+	<a href="http://www.hitachi.co.in/" target="_blank">
+  		<img src="assets/Hitachi%20Logo.jpg" alt="Hitachi Logo" style="border:0">
+	</a>	
+</div>
 </body>
 
 <form name="loginform" action="login_exec.php" method="post" autocomplete="off">
