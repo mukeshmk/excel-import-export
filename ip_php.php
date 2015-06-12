@@ -1,3 +1,37 @@
+<html>
+	<body>
+		<p align='left'>
+		<table id='t1'>
+		<tr id='t2'>
+		<td id='t3'>
+			<form method='get' action='index.php'>
+    			<button type='submit'>Logout</button>
+			</form>
+		</td>
+		<td id='t3'>
+			<form method='get' action='input_page.php'>
+    			<button type='submit'>Insert</button>
+			</form>
+		</td>
+		<tr>
+		</table>
+		</p>
+	</body>
+	<style>
+		table#t1
+		{
+			border: None
+		}
+		td#t2
+		{
+			border: None
+		}
+		td#t3
+		{
+			border: None
+		}
+	</style>
+</html>
 <?php
 
 	$sno=$_POST['sno'];
@@ -78,7 +112,6 @@
 	$d1=mysqli_query($connect,$d);
 
 	echo"<html>
-		<p align='left'><a href='index.php'>logout</a></p>
 		<head>
 			<style>
 			table, th, td 
