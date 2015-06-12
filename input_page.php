@@ -1,3 +1,6 @@
+<?php
+	require_once('auth.php');
+?>
 <html>
 	<h1 align="center">Fill it up man</h1>
     <body>

@@ -19,6 +19,7 @@
 <body>
 <p align="center" class="style1">Login successfully </p>
 <p align="center">This page is the home, you can put some stuff here......</p>
+<p align="center"><a href="input_page.php">Input...</a></p>
 <p align="center"><a href="index.php">logout</a></p>
 </body>
 </html>
