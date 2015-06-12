@@ -1,5 +1,11 @@
 <?php
 
+	//Start session
+	//session_start();
+ 
+	//Include database connection details
+	//require_once('connection.php');
+
 	$sno=$_POST['sno'];
 	$SeatNo=$_POST['SeatNo'];
 	$EmpID=$_POST['EmpID'];
@@ -60,11 +66,7 @@
 		'$Rmks'
 	);";
 
-	if(!mysqli_query($connect,$q1))
-	{
-		echo("Error description: " . mysqli_error($connect));
-		echo('<br><br>');
-	}
+	
 	
 
 	$d="SELECT * FROM Assets;";
@@ -121,8 +123,5 @@
     echo "</table>
 		</body>
 		</html>";
-
-	mysqli_close($connect);
-
 
 ?>
