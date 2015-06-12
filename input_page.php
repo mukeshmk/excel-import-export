@@ -12,20 +12,20 @@
 				</tr>
 				<tr>
 					<td>Seat No:-</td>
-					<td><input type="text" name="lnm" required></td>
+					<td><input type="text" name="SeatNo" required></td>
 				</tr>
 				<tr>
 					<td>Employee ID:-</td>
-					<td><input type="text" name="fnm" required></td>
+					<td><input type="text" name="EmpID" required></td>
 				</tr>
 				<tr>
 					<td>Employee Name:-</td>
-					<td><input type="text" name="add" required></td>
+					<td><input type="text" name="EmpNm" required></td>
 				</tr>
 				<tr>
 					<td>Location:-</td>
 					<td>
-						<select name="city" required>
+						<select name="Location" required>
 							<option value="">Select...</option>
 							<option value="Chennai">Chennai</option>
 							<option value="Hyderabad">Hyderabad</option>
