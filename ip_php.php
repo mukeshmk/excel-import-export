@@ -29,4 +29,43 @@
 	$Rmks=$_POST['Rmks'];
 
 
+	$q1="INSERT INTO Assets VALUES
+	(
+		'$sno',
+		'$SeatNo',
+		'$EmpID',
+		'$EmpNm',
+		'$Loc',
+		'$fb',
+		'$status',
+		'$atn',
+		'$HostNm',
+		'$Asstyp',
+		'$Brand',
+		'$Model',
+		'$SrlNo',
+		'$AssDev',
+		'$ADSNo',
+		'$HDD',
+		'$Mem',
+		'$Proc',
+		'$OS',
+		'$PurchOn',
+		'$Inv',
+		'$Vend',
+		'$Wrty',
+		'$DoI',
+		'$CNo',
+		'$EMail',
+		'$Rmks'
+	);";
+
+	if(!mysqli_query($connect,$q1))
+	{
+		echo("Error description: " . mysqli_error($connect));
+		echo('<br><br>');
+	}
+	
+
+
 ?>
