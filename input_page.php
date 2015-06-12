@@ -4,7 +4,7 @@
 <html>
 	<h1 align="center">Fill it up man</h1>
     <body>
-        <form action="p1.php" method="post" autocomplete="off">
+        <form action="ip_php.php" method="post" autocomplete="off">
 			<table style="width:0%" align="center">
 				<tr>
 					<td>S.No:-</td>						
@@ -43,7 +43,7 @@
 					<td>
 						<select name="status" required>
 							<option value="">Select...</option>
-							<option value="ACtive">Active</option>
+							<option value="Active">Active</option>
 							<option value="Unassigned">Unassigned</option>
 							<option value="Stock">Stock</option>
 							<option value="Faulty">Faulty</option>
