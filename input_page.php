@@ -2,6 +2,7 @@
 	require_once('auth.php');
 ?>
 <html>
+	<p align="right"><a href="index.php">logout</a></p>
 	<h1 align="center">Fill it up man</h1>
     <body>
         <form action="ip_php.php" method="post" autocomplete="off">
