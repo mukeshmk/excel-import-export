@@ -25,7 +25,7 @@
 				<tr>
 					<td>Location:-</td>
 					<td>
-						<select name="Location" required>
+						<select name="Loc" required>
 							<option value="">Select...</option>
 							<option value="Chennai">Chennai</option>
 							<option value="Hyderabad">Hyderabad</option>
@@ -56,12 +56,12 @@
 				</tr>
 				<tr>
 					<td>Host Name:-</td>						
-					<td><input type="text" name="HostName" required></td>
+					<td><input type="text" name="HostNm" required></td>
 				</tr>
 				<tr>
 					<td>Asset Type:-</td>
 					<td>
-						<select name="status" required>
+						<select name="Asstyp" required>
 							<option value="">Select...</option>
 							<option value="Desktop">Destop</option>
 							<option value="Laptop">Laptop</option>
@@ -88,12 +88,12 @@
 				</tr>
 				<tr>
 					<td>Serial No:-</td>						
-					<td><input type="text" name="SerialNo" required></td>
+					<td><input type="text" name="SrlNo" required></td>
 				</tr>
 				<tr>
 					<td>Associtated Devices:-</td>
 					<td>
-						<select name="status" required>
+						<select name="AssDev" required>
 							<option value="">Select...</option>
 							<option value="Monitor">Monitor</option>
 							<option value="Mouse">Mouse</option>
@@ -103,20 +103,20 @@
 					</td>
 				</tr>
 				<tr>
-					<td>Associated Serial No:-</td>						
-					<td><input type="text" name="AssSNo" required></td>
+					<td>Associated Devices S.No:-</td>						
+					<td><input type="text" name="ADSNo" required></td>
 				</tr>
 				<tr>
 					<td>Hard Disk:-</td>						
-					<td><input type="text" name="HardDisk" required></td>
+					<td><input type="text" name="HDD" required></td>
 				</tr>
 				<tr>
 					<td>Memory:-</td>						
-					<td><input type="text" name="Memory" required></td>
+					<td><input type="text" name="Mem" required></td>
 				</tr>
 				<tr>
 					<td>Processor:-</td>						
-					<td><input type="text" name="Processor" required></td>
+					<td><input type="text" name="Proc" required></td>
 				</tr>
 				<tr>
 					<td>Operating System:-</td>						
@@ -124,23 +124,23 @@
 				</tr>
 				<tr>
 					<td>Purchased On:-</td>						
-					<td><input type="date" name="PurchasedOn" required></td>
+					<td><input type="date" name="PurchOn" required></td>
 				</tr>
 				<tr>
 					<td>Invoice Details:-</td>						
-					<td><input type="text" name="Invoice" required></td>
+					<td><input type="text" name="Inv" required></td>
 				</tr>
 				<tr>
 					<td>Vendor Details:-</td>						
-					<td><input type="text" name="Vendor" required></td>
+					<td><input type="text" name="Vend" required></td>
 				</tr>
 				<tr>
 					<td>Warrenty Expiry:-</td>						
-					<td><input type="date" name="Warrenty" required></td>
+					<td><input type="date" name="Wrty" required></td>
 				</tr>
 				<tr>
 					<td>Date of Issue:-</td>						
-					<td><input type="date" name="issue" required></td>
+					<td><input type="date" name="DoI" required></td>
 				</tr>
 				<tr>
 					<td>Contact No:-</td>						
@@ -152,7 +152,7 @@
 				</tr>
 				<tr>
 					<td>Remarks:-</td>						
-					<td><input type="text" name="Remarks" required></td>
+					<td><input type="text" name="Rmks" required></td>
 				</tr>
 				<tr>
 					<td><button type="submit" >Submit</button></td>
