@@ -2,10 +2,22 @@
 	require_once('auth.php');
 ?>
 <html>
-	<p>
-		<form method='get' action='index.php' align="right">
-    		<button type='submit'>Logout</button>
-		</form>
+	<title>Input</title>
+	<p align="right">
+		<table>
+		<tr>
+		<td>
+			<form method='get' action='home.php'>
+    			<button type='submit'>Home</button>
+			</form>
+		</td>
+		<td>
+			<form method='get' action='index.php'>
+    			<button type='submit'>Logout</button>
+			</form>
+		</td>
+		<tr>
+		</table>
 	</p>
 	<h1 align="center">Fill it up man</h1>
     <body>
