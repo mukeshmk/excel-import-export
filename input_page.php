@@ -92,17 +92,64 @@
 					<td>
 						<select name="status" required>
 							<option value="">Select...</option>
-							<option value=""></option>
-							
+							<option value="Monitor">Monitor</option>
+							<option value="Mouse">Mouse</option>
+							<option value="Keyboard">Keyboard</option>
+							<option value="SmartCardReader">SmartCardReader</option>
 						</select>
 					</td>
 				</tr>
 				<tr>
-					<td>Gender:-</td>
-					<td>
-						<input type="radio" name="gender" value="M" required>M
-						<input type="radio" name="gender" value="F" required>F
-					</td>
+					<td>Associated Serial No:-</td>						
+					<td><input type="text" name="AssSNo" required></td>
+				</tr>
+				<tr>
+					<td>Hard Disk:-</td>						
+					<td><input type="text" name="HardDisk" required></td>
+				</tr>
+				<tr>
+					<td>Memory:-</td>						
+					<td><input type="text" name="Memory" required></td>
+				</tr>
+				<tr>
+					<td>Processor:-</td>						
+					<td><input type="text" name="Processor" required></td>
+				</tr>
+				<tr>
+					<td>Operating System:-</td>						
+					<td><input type="text" name="OS" required></td>
+				</tr>
+				<tr>
+					<td>Purchased On:-</td>						
+					<td><input type="date" name="PurchasedOn" required></td>
+				</tr>
+				<tr>
+					<td>Invoice Details:-</td>						
+					<td><input type="text" name="Invoice" required></td>
+				</tr>
+				<tr>
+					<td>Vendor Details:-</td>						
+					<td><input type="text" name="Vendor" required></td>
+				</tr>
+				<tr>
+					<td>Warrenty Expiry:-</td>						
+					<td><input type="date" name="Warrenty" required></td>
+				</tr>
+				<tr>
+					<td>Date of Issue:-</td>						
+					<td><input type="date" name="issue" required></td>
+				</tr>
+				<tr>
+					<td>Contact No:-</td>						
+					<td><input type="text" name="CNo" required></td>
+				</tr>
+				<tr>
+					<td>EMail ID:-</td>						
+					<td><input type="text" name="EMail" required></td>
+				</tr>
+				<tr>
+					<td>Remarks:-</td>						
+					<td><input type="text" name="Remarks" required></td>
 				</tr>
 				<tr>
 					<td><button type="submit" >Submit</button></td>
