@@ -15,13 +15,10 @@
 		echo "Failed to connect to MySQL: " . mysqli_connect_error();
 	}
 
-	$createdb="CREATE DATABASE simple_login;";
-	$crate1=mysqli_query($connect,$createdb);
-
-	$c="USE simple_login;";
+	$c="USE my_intern;";
 	$c1=mysqli_query($connect,$c);
 
-	$q1="INSERT INTO mem VALUES('$mem_id','$umn','$pwrd','$fnm','$lnm','$add','$cont','$email','$gender');";
+	$q1="INSERT INTO member VALUES('$mem_id','$umn','$pwrd','$fnm','$lnm','$add','$cont','$email','$gender');";
 	if(!mysqli_query($connect,$q1))
 	{
 		echo("Error description: " . mysqli_error($connect));
@@ -29,7 +26,7 @@
 	}
 	
 	
-	$d="SELECT * FROM mem;";
+	$d="SELECT * FROM member;";
 	$d1=mysqli_query($connect,$d);
 
 	echo"<html>

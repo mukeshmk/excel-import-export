@@ -61,8 +61,7 @@
 	$result2=mysqli_query($connect,$qry2);
 
 
-
-	$q1="INSERT INTO member VALUES(1,'root','root');";
+	$q1="INSERT INTO member VALUES(0,'root','root','NULL','NULL','NULL','NULL','NULL','NULL');";
 	$r=mysqli_query($connect,$q1);
 
 	mysqli_close($connect);
