@@ -75,7 +75,7 @@
 	}
     echo "</table>
 		</body>
-			<form method='get' action='index.php' align='center'>
+			<form method='get' action='../index.php' align='center'>
     			<button type='submit'>Login</button>
 			</form>
 		</html>";

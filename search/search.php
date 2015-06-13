@@ -1,3 +1,6 @@
+<?php
+	require_once('../login/auth.php');
+?>
 <!DOCTYPE HTML> 
 <html>
 <head>
@@ -28,8 +31,23 @@
 	}
 </style>	
 </head>
-
 <body>
+	<p align='right'>
+		<table id='t1' align='right'>
+		<tr id='t2'>
+		<td id='t3'>
+			<form method='get' action='../home.php'>
+    			<button type='submit'>Home</button>
+			</form>
+		</td>
+		<td id='t3'>
+			<form method='get' action='../index.php'>
+    			<button type='submit'>Logout</button>
+			</form>
+		</td>
+		<tr>
+		</table>
+	</p>
 
 <h1 align='center'>Select the Fields that you want data to be displyed</h1>
 <form action="search_php.php" method="post" align="center">
@@ -38,7 +56,7 @@
 		<tr id="t2">
 		<td id="t3">
 		<table align='left'>
-			<tr><td><input type="checkbox" name="formFields[]" value="SNo"></td><td>S.No</td></tr>
+			<tr><td><input type="checkbox" name="formFields[]" value="SNo" checked></td><td>S.No</td></tr>
 			<tr><td><input type="checkbox" name="formFields[]" value="EmployeeID"></td><td>Employee ID</td></tr>
 			<tr><td><input type="checkbox" name="formFields[]" value="Location"></td><td>Location</td></tr>
 			<tr><td><input type="checkbox" name="formFields[]" value="Status"></td><td>Status</td></tr>

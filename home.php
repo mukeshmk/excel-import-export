@@ -1,5 +1,5 @@
 <?php
-	require_once('auth.php');
+	require_once('login/auth.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -23,17 +23,17 @@
 	<table align="center">
 		<tr>
 		<td>
-			<form method='get' action='input_page.php'>
+			<form method='get' action='insert/input_page.php'>
     			<button type='submit'>Insert</button>
 			</form>
 		</td>
 		<td>
-			<form method='get' action='display.php'>
+			<form method='get' action='display/disp.php'>
     			<button type='submit'>Display</button>
 			</form>
 		</td>
 		<td>
-			<form method="get" action="search.html">
+			<form method="get" action="search/search.php">
 				<button type="submit">Search</button>
 			</form>
 		</td>

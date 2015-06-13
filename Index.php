@@ -18,7 +18,7 @@
 </div>
 </body>
 
-<form name="loginform" action="login_exec.php" method="post" autocomplete="off">
+<form name="loginform" action="login/login_exec.php" method="post" autocomplete="off">
 <table width="309" border="0" align="center" cellpadding="2" cellspacing="5">
   <tr>
     <td colspan="2">
@@ -49,7 +49,7 @@
   </tr>
 </table>
 </form>
-<form method='get' action='create_user.html' align="center">
+<form method='get' action='create_user/create_user.html' align="center">
 	<button type='submit'>Create User</button>
 </form>
 </html>

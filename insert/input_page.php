@@ -1,5 +1,5 @@
 <?php
-	require_once('auth.php');
+	require_once('../login/auth.php');
 ?>
 <html>
 	<title>Input</title>
@@ -7,12 +7,12 @@
 		<table>
 		<tr>
 		<td>
-			<form method='get' action='home.php'>
+			<form method='get' action='../home.php'>
     			<button type='submit'>Home</button>
 			</form>
 		</td>
 		<td>
-			<form method='get' action='index.php'>
+			<form method='get' action='../index.php'>
     			<button type='submit'>Logout</button>
 			</form>
 		</td>

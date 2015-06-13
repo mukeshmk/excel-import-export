@@ -43,7 +43,7 @@
 	{
 		$_SESSION['ERRMSG_ARR'] = $errmsg_arr;
 		session_write_close();
-		header("location: index.php");
+		header("location: ../index.php");
 		exit();
 	}
  
@@ -63,7 +63,7 @@
 			$_SESSION['SESS_FIRST_NAME'] = $member['username'];
 			$_SESSION['SESS_LAST_NAME'] = $member['password'];
 			session_write_close();
-			header("location: home.php");
+			header("location: ../home.php");
 			exit();
 		}
 		else 
@@ -75,7 +75,7 @@
 			{
 				$_SESSION['ERRMSG_ARR'] = $errmsg_arr;
 				session_write_close();
-				header("location: index.php");
+				header("location: ../index.php");
 				exit();
 			}
 		}
