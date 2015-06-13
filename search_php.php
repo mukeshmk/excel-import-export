@@ -63,9 +63,15 @@
 			}
 			echo("</tr>");
     		// output data of each row
-    		
-		
-		
+    		while($row=mysqli_fetch_array($d1)) 
+			{
+				echo("<tr>");
+				for($i=0; $i < $nFields; $i++)
+				{
+					echo("<td>".$row[$aFields[$i]]."</td>");
+				}
+       			echo ("</tr>");
+			}
 			echo "</table>";
 		
 		}
