@@ -33,6 +33,11 @@
 			</form>
 		</td>
 		<td>
+			<form method="get" action="search.html">
+				<button type="submit">Search</button>
+			</form>
+		</td>
+		<td>
 			<form method='get' action='index.php'>
     			<button type='submit'>Logout</button>
 			</form>
