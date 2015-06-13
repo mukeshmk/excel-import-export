@@ -42,7 +42,40 @@
 			</style>
 		</head>
 		<body>";
-
+	echo "<table align = 'center'>
+		
+	<tr>
+		
+	<th>MemID</th>
+	<th>UserNAme</th>
+	<th>Password</th>
+	<th>FirstName</th>
+	<th>LastName</th>
+	<th>Address</th>
+	<th>Contact</th>
+	<th>EMail</th>
+	<th>Gender</th>
+	
+	</tr>";
+    // output data of each row
+    while($row=mysqli_fetch_array($d1)) 
+	{
+       	echo "
+		<tr>
+       	<td>".$row["mem_id"]."</td>
+		<td>".$row["username"]."</td>
+		<td>".$row["password"]."</td>
+		<td>".$row["fname"]."</td>
+       	<td>".$row["lname"]."</td>
+		<td>".$row["address"]."</td>
+		<td>".$row["contact"]."</td>
+		<td>".$row["emailid"]."</td>
+		<td>".$row["gender"]."</td>
+		</tr>";
+	}
+    echo "</table>
+		</body>
+		</html>";
 
 	mysqli_close($connect);
 
