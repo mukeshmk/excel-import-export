@@ -15,8 +15,14 @@
 	(
   	 mem_id int PRIMARY KEY,
   	 username varchar(30) NOT NULL,
-  	 password varchar(30) NOT NULL
-	);";
+  	 password varchar(30) NOT NULL,
+	 fname varchar(30) NOT NULL,
+  	 lname varchar(30) NOT NULL,
+  	 address varchar(100) NOT NULL,
+  	 contact varchar(30) NOT NULL,
+  	 emailid varchar(100) NOT NULL,
+	 gender varchar(10) NOT NULL
+	)";
 
 	$result1=mysqli_query($connect,$qry1);
 
