@@ -23,6 +23,15 @@
 			echo("</p>");
 			
 			
+			$connect=mysqli_connect("localhost","root","");
+			if (mysqli_connect_errno()) 
+			{
+				echo "Failed to connect to MySQL: " . mysqli_connect_error();
+			}
+			
+			$c="USE my_intern;";
+			$c1=mysqli_query($connect,$c);
+	
 			
 		}
 	}
