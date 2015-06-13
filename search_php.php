@@ -15,7 +15,7 @@
 		{
 			$nFields = count($aFields);
 			
-			echo("<p>You selected $nFields Fields: ");
+			echo("<p align='center'>You selected $nFields Fields: ");
 			for($i=0; $i < $nFields; $i++)
 			{
 				echo($aFields[$i] . " ");
@@ -39,8 +39,7 @@
 				$k=$k.",".$aFields[$i];
 			}
 
-			$d="SELECT ".$k." FROM Persons;";
-			echo($d);
+			$d="SELECT ".$k." FROM Assets;";
 			
 			$d1=mysqli_query($connect,$d);
 			echo("<head>
@@ -77,6 +76,9 @@
 		}
 	}
 ?>
-		
+	<br><br>
+	<form method='get' action='home.php' align='center'>
+    	<button type='submit'>Home</button>
+	</form>	
 	</body>
 </html>
