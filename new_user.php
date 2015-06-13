@@ -21,7 +21,30 @@
 	$c="USE simple_login;";
 	$c1=mysqli_query($connect,$c);
 
+	$q1="INSERT INTO mem VALUES('$mem_id','$umn','$pwrd','$fnm','$lnm','$add','$cont','$email','$gender');";
+	if(!mysqli_query($connect,$q1))
+	{
+		echo("Error description: " . mysqli_error($connect));
+		echo('<br><br>');
+	}
+	
+	
+	$d="SELECT * FROM mem;";
+	$d1=mysqli_query($connect,$d);
 
+	echo"<html>
+		<head>
+			<style>
+			table, th, td 
+			{
+     			border: 1px solid black;
+			}
+			</style>
+		</head>
+		<body>";
+
+
+	mysqli_close($connect);
 
 
 ?>
