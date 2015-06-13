@@ -32,7 +32,18 @@
 			$c="USE my_intern;";
 			$c1=mysqli_query($connect,$c);
 	
+			$k="";
+			$k=$k.$aFields[0	];
+			for($i=1; $i < $nFields; $i++)
+			{
+				$k=$k.",".$aFields[$i];
+			}
+
+			$d="SELECT ".$k." FROM Persons;";
+			echo($d);
 			
+			
+		
 		}
 	}
 ?>
