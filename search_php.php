@@ -42,7 +42,31 @@
 			$d="SELECT ".$k." FROM Persons;";
 			echo($d);
 			
-			
+			$d1=mysqli_query($connect,$d);
+			echo("<head>
+				<style>
+					table, th, td 
+					{
+     					border: 1px solid black;
+					}
+				</style>
+				</head>
+				<body>");
+	
+			echo("<table align='center'>");
+			echo("<tr>");
+			for($i=0; $i < $nFields; $i++)
+			{	
+				echo("<th>");
+				echo($aFields[$i] . " ");
+				echo("</th>");
+			}
+			echo("</tr>");
+    		// output data of each row
+    		
+		
+		
+			echo "</table>";
 		
 		}
 	}
