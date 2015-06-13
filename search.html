@@ -4,16 +4,28 @@
 	<title>Search</title>
 <!-- define some style elements-->
 <style>
-label,a 
-{
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px; 
-}
-table, th, td 
-{
- 	border: 1px solid black;
-	white-space:nowrap
-}
+	label,a 
+	{
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : 12px; 
+	}
+	table, th, td 
+	{
+ 		border: 1px solid black;
+		white-space:nowrap
+	}
+	table#t1
+	{
+		border: None
+	}
+	tr#t2
+	{
+		border: None
+	}
+	td#t3
+	{
+		border: None
+	}
 </style>	
 </head>
 
@@ -22,65 +34,46 @@ table, th, td
 <h1 align='center'>Select the Fields that you want data to be displyed</h1>
 <form action="search_php.php" method="post" align="center">
 	<label for='formFields[]'>Select the Fields:</label><br>
-		<table align='center'>
-		<tr><td><input type="checkbox" name="formFields[]" value="SNo"></td><td>S.No</td></tr>
-		<tr><td><input type="checkbox" name="formFields[]" value="SeatNo"></td><td>Seat No.</td></tr>
-		<tr><td><input type="checkbox" name="formFields[]" value="EmployeeID"></td><td>Employee ID</td></tr>
-		<tr><td><input type="checkbox" name="formFields[]" value="EmployeeName"></td><td>Employee Name</td></tr>
-		<tr><td><input type="checkbox" name="formFields[]" value="Location"></td><td>Location</td></tr>
-		<tr><td><input type="checkbox" name="formFields[]" value="Floor"></td><td>Floor/Block</td></tr>
-		<tr><td><input type="checkbox" name="formFields[]" value="Status"></td><td>Status</td></tr>
-		<tr><td><input type="checkbox" name="formFields[]" value="AssetTagNo"></td><td>Asset Tag No</td></tr>
-		<tr><td><input type="checkbox" name="formFields[]" value="HostName"></td><td>Host Name</td></tr>
-		<tr><td><input type="checkbox" name="formFields[]" value="AssetType"></td><td>Asset Type</td></tr>
-		<tr><td><input type="checkbox" name="formFields[]" value="Brand"></td><td>Brand</td></tr>
-		<tr><td><input type="checkbox" name="formFields[]" value="Model"></td><td>Model</td></tr>
-		<tr><td><input type="checkbox" name="formFields[]" value="SerialNo"></td><td>Serial No.</td></tr>
-		<tr><td><input type="checkbox" name="formFields[]" value="AssociatedDevices"></td><td>Associated Devices</td></tr>
-		<tr><td><input type="checkbox" name="formFields[]" value="AssoDevSNo"></td><td>Associated Decvice Serial No.</td></tr>
-		<tr><td><input type="checkbox" name="formFields[]" value="HardDisk"></td><td>Hard Disk</td></tr>
-		<tr><td><input type="checkbox" name="formFields[]" value="Memory"></td><td>Memory</td></tr>
-		<tr><td><input type="checkbox" name="formFields[]" value="Processor"></td><td>Processor</td></tr>
-		<tr><td><input type="checkbox" name="formFields[]" value="OS"></td><td>Operating System</td></tr>
-		<tr><td><input type="checkbox" name="formFields[]" value="PurchasedOn"></td><td>Purchased On.</td></tr>
-		<tr><td><input type="checkbox" name="formFields[]" value="InvoiceDetails"></td><td>Invoice Dectials</td></tr>
-		<tr><td><input type="checkbox" name="formFields[]" value="VendorDetails"></td><td>Vendor Details</td></tr>
-		<tr><td><input type="checkbox" name="formFields[]" value="WarrentyExp"></td><td>Warrenty Expiry</td></tr>
-		<tr><td><input type="checkbox" name="formFields[]" value="DateofIssue"></td><td>Date of Issue</td></tr>
-		<tr><td><input type="checkbox" name="formFields[]" value="ContactNo"></td><td>Contact No.</td></tr>
-		<tr><td><input type="checkbox" name="formFields[]" value="EMailID"></td><td>EMail ID</td></tr>
-		<tr><td><input type="checkbox" name="formFields[]" value="Remarks"></td><td>Remarks</td></tr>
+	<table id="t1"align='center'>
+		<tr id="t2">
+		<td id="t3">
+		<table align='left'>
+			<tr><td><input type="checkbox" name="formFields[]" value="SNo"></td><td>S.No</td></tr>
+			<tr><td><input type="checkbox" name="formFields[]" value="EmployeeID"></td><td>Employee ID</td></tr>
+			<tr><td><input type="checkbox" name="formFields[]" value="Location"></td><td>Location</td></tr>
+			<tr><td><input type="checkbox" name="formFields[]" value="Status"></td><td>Status</td></tr>
+			<tr><td><input type="checkbox" name="formFields[]" value="HostName"></td><td>Host Name</td></tr>
+			<tr><td><input type="checkbox" name="formFields[]" value="Brand"></td><td>Brand</td></tr>
+			<tr><td><input type="checkbox" name="formFields[]" value="SerialNo"></td><td>Serial No.</td></tr>
+			<tr><td><input type="checkbox" name="formFields[]" value="AssoDevSNo"></td><td>Associated Decvice Serial No.</td></tr>
+			<tr><td><input type="checkbox" name="formFields[]" value="Memory"></td><td>Memory</td></tr>
+			<tr><td><input type="checkbox" name="formFields[]" value="OS"></td><td>Operating System</td></tr>
+			<tr><td><input type="checkbox" name="formFields[]" value="InvoiceDetails"></td><td>Invoice Dectials</td></tr>
+			<tr><td><input type="checkbox" name="formFields[]" value="WarrentyExp"></td><td>Warrenty Expiry</td></tr>
+			<tr><td><input type="checkbox" name="formFields[]" value="ContactNo"></td><td>Contact No.</td></tr>
+			<tr><td><input type="checkbox" name="formFields[]" value="Remarks"></td><td>Remarks</td></tr>
 		</table>
-<!--	<select multiple="multiple" name="formFields[]">
-		<option value="SNo">S.No</option>
-		<option value="SeatNo">Seat No.</option>
-		<option value="EmployeeID">Employee ID</option>
-		<option value="EmployeeName">Employee Name</option>
-		<option value="Location">Location</option>
-		<option value="Floor">Floor/Block</option>
-		<option value="Status">Status</option>
-		<option value="AssetTagNo">Asset Tag No</option>
-		<option value="HostName">Host Name</option>
-		<option value="AssetType">Asset Type</option>
-		<option value="Brand">Brand</option>
-		<option value="Model">Model</option>
-		<option value="SerialNo">Serial No.</option>
-		<option value="AssociatedDevice">Associated Device</option>
-		<option value="AssoDevSNo">Associated Decvice Serial No.</option>
-		<option value="HardDisk">Hard Disk</option>
-		<option value="Memory">Memory</option>
-		<option value="Processor">Processor</option>
-		<option value="OS">Operating System</option>
-		<option value="PurchasedOn">Purchased On.</option>
-		<option value="InvoiceDetails">Invoice Dectials</option>
-		<option value="VendorDetails">Vendor Details</option>
-		<option value="WarrentyExp">Warrenty Expiry</option>
-		<option value="DateofIssue">Date of Issue</option>
-		<option value="ContactNo">Contact No.</option>
-		<option value="EMailID">EMail ID</option>
-		<option value="Remarks">Remarks</option>
-	</select>
-		-->
+		</td>
+			
+		<td id="t3">
+		<table align='right'>
+			<tr><td><input type="checkbox" name="formFields[]" value="SeatNo"></td><td>Seat No.</td></tr>
+			<tr><td><input type="checkbox" name="formFields[]" value="EmployeeName"></td><td>Employee Name</td></tr>
+			<tr><td><input type="checkbox" name="formFields[]" value="Floor"></td><td>Floor/Block</td></tr>
+			<tr><td><input type="checkbox" name="formFields[]" value="AssetTagNo"></td><td>Asset Tag No</td></tr>
+			<tr><td><input type="checkbox" name="formFields[]" value="AssetType"></td><td>Asset Type</td></tr>
+			<tr><td><input type="checkbox" name="formFields[]" value="Model"></td><td>Model</td></tr>
+			<tr><td><input type="checkbox" name="formFields[]" value="AssociatedDevices"></td><td>Associated Devices</td></tr>
+			<tr><td><input type="checkbox" name="formFields[]" value="HardDisk"></td><td>Hard Disk</td></tr>
+			<tr><td><input type="checkbox" name="formFields[]" value="Processor"></td><td>Processor</td></tr>
+			<tr><td><input type="checkbox" name="formFields[]" value="PurchasedOn"></td><td>Purchased On.</td></tr>
+			<tr><td><input type="checkbox" name="formFields[]" value="VendorDetails"></td><td>Vendor Details</td></tr>
+			<tr><td><input type="checkbox" name="formFields[]" value="DateofIssue"></td><td>Date of Issue</td></tr>
+			<tr><td><input type="checkbox" name="formFields[]" value="EMailID"></td><td>EMail ID</td></tr>
+		</table>
+		</td>
+		</tr>
+	</table>
 	<br>
 	<input type="submit" name="formSubmit" value="Search" >
 </form>
