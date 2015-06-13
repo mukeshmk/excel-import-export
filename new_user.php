@@ -26,11 +26,13 @@
 	}
 	
 	
-	$d="SELECT * FROM member;";
+	$d="SELECT * FROM member WHERE mem_id = $mem_id;";
 	$d1=mysqli_query($connect,$d);
 
 	echo"<html>
 		<head>
+			<h1 align='center'>Login Created Successfully!!</h1>
+			<h3 align='center'>Cheack your Details again just incase.</h3>
 			<style>
 			table, th, td 
 			{
@@ -59,19 +61,22 @@
 	{
        	echo "
 		<tr>
-       	<td>".$row["mem_id"]."</td>
-		<td>".$row["username"]."</td>
-		<td>".$row["password"]."</td>
-		<td>".$row["fname"]."</td>
-       	<td>".$row["lname"]."</td>
-		<td>".$row["address"]."</td>
-		<td>".$row["contact"]."</td>
-		<td>".$row["emailid"]."</td>
-		<td>".$row["gender"]."</td>
+       	<td align='center'>".$row["mem_id"]."</td>
+		<td align='center'>".$row["username"]."</td>
+		<td align='center'>".$row["password"]."</td>
+		<td align='center'>".$row["fname"]."</td>
+       	<td align='center'>".$row["lname"]."</td>
+		<td align='center'>".$row["address"]."</td>
+		<td align='center'>".$row["contact"]."</td>
+		<td align='center'>".$row["emailid"]."</td>
+		<td align='center'>".$row["gender"]."</td>
 		</tr>";
 	}
     echo "</table>
 		</body>
+			<form method='get' action='index.php' align='center'>
+    			<button type='submit'>Login</button>
+			</form>
 		</html>";
 
 	mysqli_close($connect);
