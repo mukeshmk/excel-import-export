@@ -30,6 +30,7 @@
 	$d1=mysqli_query($connect,$d);
 
 	echo"<html>
+		<title>User Details</title>
 		<head>
 			<h1 align='center'>Login Created Successfully!!</h1>
 			<h3 align='center'>Cheack your Details again just incase.</h3>

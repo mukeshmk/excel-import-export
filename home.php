@@ -28,6 +28,11 @@
 			</form>
 		</td>
 		<td>
+			<form method='get' action='display.php'>
+    			<button type='submit'>Display</button>
+			</form>
+		</td>
+		<td>
 			<form method='get' action='index.php'>
     			<button type='submit'>Logout</button>
 			</form>

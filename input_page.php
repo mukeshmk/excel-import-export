@@ -22,7 +22,6 @@
 	<h1 align="center">Fill it up man</h1>
     <body>
         <form action="ip_php.php" method="post" autocomplete="off">
-			
 			<table style="width:0%" align="center">
 			<tr>
 				
