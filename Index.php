@@ -49,4 +49,7 @@
   </tr>
 </table>
 </form>
+<form method='get' action='create_user.php' align="center">
+	<button type='submit'>Create User</button>
+</form>
 </html>
