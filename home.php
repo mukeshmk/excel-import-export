@@ -1,5 +1,5 @@
 <?php
-	require_once('login/auth.php');
+	require_once('login/auth_parent.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,8 +15,13 @@
 -->
 </style>
 </head>
- 
+	
 <body>
+<p align='right'>
+	<form method='get' action='index.php' align='right'>
+    	<button type='submit'>Logout</button>
+	</form>
+</p>
 <p align="center" class="style1">Login successfully </p>
 <p align="center">This page is the home, you can put some stuff here......</p>
 <p align="center">
@@ -35,11 +40,6 @@
 		<td>
 			<form method="get" action="search/search.php">
 				<button type="submit">Search</button>
-			</form>
-		</td>
-		<td>
-			<form method='get' action='index.php'>
-    			<button type='submit'>Logout</button>
 			</form>
 		</td>
 		</tr>
