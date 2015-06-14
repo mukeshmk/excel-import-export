@@ -181,7 +181,7 @@
 				</tr>
 				<tr>
 					<td>EMail ID:-</td>						
-					<td><input type="text" name="EMail" required></td>
+					<td><input type="email" name="EMail" required></td>
 				</tr>
 			</table>
 			</td>
