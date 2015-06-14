@@ -42,6 +42,11 @@
 				<button type="submit">Search</button>
 			</form>
 		</td>
+		<td>
+			<form method="get" action="delete/delete.php">
+				<button type="submit">Delete</button>
+			</form>
+		</td>
 		</tr>
 	</table>
 </p>
