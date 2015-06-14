@@ -43,7 +43,7 @@
 			</form>
 		</td>
 		<td>
-			<form method="get" action="delete/delete.php">
+			<form method="get" action="delete/del_disp.php">
 				<button type="submit">Delete</button>
 			</form>
 		</td>

@@ -2,7 +2,7 @@
 	require_once('../login/auth.php');
 ?>
 <html>
-	<title>Search Results</title>
+	<title>Delete Selection</title>
 	<body>
 	<p align='right'>
 		<table id='t1' align='right'>
@@ -109,5 +109,23 @@
 		}
 	}
 ?>
+	<br><br>
+	<form action="del_php.php" method="post" autocomplete="off">
+		<table id='t1' align='center'>
+			<tr id='t2'>
+				<td id='t3'>
+					<p>Enter SNo to ne deleted.</p>
+				</td>
+			</tr>
+			<tr id='t2'>
+				<td id='t3'>
+					<input type="text" name="del"required>
+				</td>
+				<td id='t3'>
+					<button type="submit">Delete</button>	
+				</td>
+			</tr>
+		</table>
+	</form>
 	</body>
 </html>
