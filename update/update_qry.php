@@ -1,7 +1,41 @@
 <?php
 	require_once('../login/auth.php');
 ?>
-
+<html>
+	<title>Update Selection</title>
+	<body>
+	<p>
+		<table id='t1' align='right'>
+		<tr id='t2'>
+		<td id='t3'>
+			<form method='get' action='../home.php'>
+    			<button type='submit'>Home</button>
+			</form>
+		</td>
+		<td id='t3'>
+			<form method='get' action='../index.php'>
+    			<button type='submit'>Logout</button>
+			</form>
+		</td>
+		<tr>
+		</table>
+		<style>
+		table#t1
+		{
+			border: None
+		}
+		td#t2
+		{
+			border: None
+		}
+		td#t3
+		{
+			border: None
+		}
+		</style>
+	</p>
+	</body>
+</html>
 <?php
 	
 	$connect=mysqli_connect("localhost","root","");
@@ -23,8 +57,6 @@
 	$q=$q.$aFields[count($aFields)-1].'="'.$subFields[count($aFields)-1].'"';
 	$q=$q." WHERE SNo=".$_SESSION['sno'].";";
 	echo($q);
-	//$qry=mysqli_query($connect,$q);
-
-//UPDATE Persons SET LastName="mukesh",FirstName="mk",City="Kochi" WHERE PersonID=1;
+	$qry=mysqli_query($connect,$q);
 	
 ?>

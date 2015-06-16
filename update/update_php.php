@@ -49,15 +49,7 @@
 		else 
 		{
 			$nFields = count($aFields);
-			
-			echo("<p align='center'>You selected $nFields Fields: ");
-			for($i=0; $i < $nFields; $i++)
-			{
-				echo($aFields[$i] . " ");
-			}
-			echo("</p>");
-			
-			
+						
 			$connect=mysqli_connect("localhost","root","");
 			if (mysqli_connect_errno()) 
 			{
@@ -132,7 +124,7 @@
 				}
 				echo("</tr>");
 			}
-			echo"<tr><button action='submit' align='center'>Update</button></tr>";
+			echo"<button action='submit' align='center'>Update</button>";
 			echo "</table>";
 		
 		}
