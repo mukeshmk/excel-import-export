@@ -101,7 +101,7 @@
 			}
 			echo("</tr>");
     		// output data of each row
-			
+			echo("<form action='update_php2.php' method='post'>");
     		while($row=mysqli_fetch_array($d1)) 
 			{
 				echo("<tr>");
