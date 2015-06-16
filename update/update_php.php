@@ -2,7 +2,7 @@
 	require_once('../login/auth.php');
 ?>
 <html>
-	<title>Search Results</title>
+	<title>Update Selection</title>
 	<body>
 	<p>
 		<table id='t1' align='right'>
@@ -77,7 +77,7 @@
 			}
 
 			$d="SELECT ".$k." FROM Assets Where SNo=$sno;";
-			echo($d);
+
 			$_SESSION['qur']=$d;
 			
 			$d1=mysqli_query($connect,$d);
@@ -101,7 +101,7 @@
 			}
 			echo("</tr>");
     		// output data of each row
-			echo("<form action='update_php2.php' method='post'>");
+			echo("<form action='update_qry.php' method='post'");
     		while($row=mysqli_fetch_array($d1)) 
 			{
 				echo("<tr>");
@@ -132,6 +132,7 @@
 				}
 				echo("</tr>");
 			}
+			echo"<tr><button action='submit' align='center'>Update</button></tr>";
 			echo "</table>";
 		
 		}

@@ -49,7 +49,7 @@
 <?php require('../display/display.php'); ?>
 <body>
 <h3 align='center'>Select the Fields that you want data to be Update</h3>
-<form action="update_php1.php" method="post" align="center">
+<form action="update_php.php" method="post" align="center">
 	<label for='formFields[]'></label><br>
 	<p align="center">enter sno of the data to be updated:-</p>
 	<p><input type='text' name='sno' autocomplete="off"></input></p>
