@@ -9,7 +9,6 @@
 	$q=$_SESSION['qur'];
 	$qur=mysqli_query($connect,$q);
 
-	echo($q);
 	$filename = "export_file.xls"; // File Name
 
 	// Download file
