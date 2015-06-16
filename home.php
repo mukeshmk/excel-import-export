@@ -43,6 +43,11 @@
 			</form>
 		</td>
 		<td>
+			<form method="get" action="update/update.php">
+				<button type="submit">Update</button>
+			</form>
+		</td>
+		<td>
 			<form method="get" action="delete/del_disp.php">
 				<button type="submit">Delete</button>
 			</form>
