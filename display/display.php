@@ -14,6 +14,8 @@
 	$d="SELECT * FROM Assets;";
 	$d1=mysqli_query($connect,$d);
 
+	$_SESSION['qur']=$d;
+
 	echo"<html>
 		<head>
 			<style>
@@ -25,6 +27,10 @@
 			</style>
 		</head>
 		<body>";
+
+	echo("<form action='../export/export.php' method='get'>
+			<button type='submit'>Export Table</button>
+			</form>");
 
 	echo "<table align = 'left' width='0%''><tr><th>S.No.</th><th>Seat No.</th><th>Employee ID.</th><th>Employee Name</th><th>Location</th><th>Floor/Block</th><th>Status</th><th>Asset Tag No.</th><th>Host Name</th><th>Asset Type</th><th>Brand</th><th>Model</th><th>Serial No.</th><th>Associated Devices</th><th>Associated Devices Seital No.</th><th>Hard Disk</th><th>Memory</th><th>Processor</th><th>Operating System</th><th>Purchased ON</th><th>Invoice Details</th><th>Vendor Details</th><th>Warrenty Expiry</th><th>Date of Issue</th><th>Contact No.</th><th>Email ID</th><th>Remarks</th></tr>";
 
