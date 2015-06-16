@@ -52,7 +52,7 @@
 <form action="update_php.php" method="post" align="center">
 	<label for='formFields[]'></label><br>
 	<p align="center">enter sno of the data to be updated:-</p>
-	<p><input type='text' name='sno' autocomplete="off"></input></p>
+	<p><input type='text' name='sno' autocomplete="off" required></input></p>
 	<table id="t1"align='center'>
 		<tr id="t2">
 		<td id="t3">

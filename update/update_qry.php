@@ -56,7 +56,8 @@
 	}
 	$q=$q.$aFields[count($aFields)-1].'="'.$subFields[count($aFields)-1].'"';
 	$q=$q." WHERE SNo=".$_SESSION['sno'].";";
-	echo($q);
+
 	$qry=mysqli_query($connect,$q);
+	require('../display/display.php');
 	
 ?>

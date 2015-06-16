@@ -138,7 +138,6 @@
 							<option value="SurfaceTablet">Surface Tablet</option>
 							<option value="Projector">Projector</option>
 							<option value="Others">Others</option>
-							
 						</select>
 					</td>
 				</tr>

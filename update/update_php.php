@@ -116,6 +116,43 @@
 							<option value='Bangalore'>Bangalore</option>
 						</select>");					
 					}
+					else if($aFields[$i]=='Status')
+					{
+						echo("<select name='subFields[]' required>
+							<option value=''>Select...</option>
+							<option value='Active'>Active</option>
+							<option value='Unassigned'>Unassigned</option>
+							<option value='Stock'>Stock</option>
+							<option value='Faulty'>Faulty</option>
+						</select>");
+					}
+					else if($aFields[$i]=='AssetType')
+					{
+						echo("<select name='subFields[]' required>
+							<option value=''>Select...</option>
+							<option value='Desktop'>Destop</option>
+							<option value='Laptop'>Laptop</option>
+							<option value='Printer'>Printer</option>
+							<option value='Scanner'>Scanner</option>
+							<option value='Switch'>Switch</option>
+							<option value='Router'>Router</option>
+							<option value='FireWall'>Fire Wall</option>
+							<option value='AccessPoint'>Access Point</option>
+							<option value='SurfaceTablet'>Surface Tablet</option>
+							<option value='Projector'>Projector</option>
+							<option value='Others'>Others</option>
+						</select>");
+					}
+					else if($aFields[$i]=='AssociatedDevices')
+					{
+						echo("<select name='subFields[]' required>
+							<option value=''>Select...</option>
+							<option value='Monitor'>Monitor</option>
+							<option value='Mouse'>Mouse</option>
+							<option value='Keyboard'>Keyboard</option>
+							<option value='SmartCardReader'>SmartCardReader</option>
+						</select>");
+					}
 					else
 					{
 						echo("<input type='text' name='subFields[]'] autocomplete='off'></input>");
