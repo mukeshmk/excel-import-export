@@ -48,11 +48,12 @@
 </head>
 <?php require('../display/display.php'); ?>
 <body>
-<h3 align='center'>Select the Fields that you want data to be Update</h3>
+
 <form action="update_php.php" method="post" align="center">
 	<label for='formFields[]'></label><br>
-	<p align="center">enter sno of the data to be updated:-</p>
+	<h3 align="center">Enter SNo of the recoed to be updated:-</h3>
 	<p><input type='text' name='sno' autocomplete="off" required></input></p>
+	<h3 align='center'>Select the Fields that you want to Update</h3>
 	<table id="t1"align='center'>
 		<tr id="t2">
 		<td id="t3">

@@ -49,7 +49,7 @@
 		</table>
 	</p>
 
-<h1 align='center'>Select the Fields that you want data to be displyed</h1>
+<h1 align='center'>Select the Field(s) that is/are to be searched:</h1>
 <form action="search_php.php" method="post" align="center">
 	<label for='formFields[]'>Select the Fields:</label><br>
 	<table id="t1"align='center'>

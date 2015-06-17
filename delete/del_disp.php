@@ -49,8 +49,7 @@
 		</table>
 	</p>
 
-<h1 align='center'>Select the Fields that you want Search Data</h1>
-<h1 align='center'>that has to be Deleted.</h1>
+<h1 align='center'>Select the Fields to Search and Delete</h1>
 <form action="del_sel.php" method="post" align="center">
 	<label for='formFields[]'>Select the Fields:</label><br>
 	<table id="t1"align='center'>

@@ -114,7 +114,7 @@
 		<table id='t1' align='center'>
 			<tr id='t2'>
 				<td id='t3'>
-					<p>Enter SNo to ne deleted.</p>
+					<p>Enter SNo to be deleted.</p>
 				</td>
 			</tr>
 			<tr id='t2'>

@@ -81,6 +81,7 @@
 					}
 				</style>
 				</head>
+				<h1 align='left'>Enter new values to be updated :</h1>
 				<body>");
 	
 			echo("<table align='center'>");
@@ -93,7 +94,7 @@
 			}
 			echo("</tr>");
     		// output data of each row
-			echo("<form action='update_qry.php' method='post'");
+			echo("<form action='update_qry.php' method='post' required");
     		while($row=mysqli_fetch_array($d1)) 
 			{
 				echo("<tr>");
@@ -175,7 +176,7 @@
 					}
 					else
 					{
-						echo("<input type='text' name='subFields[]' autocomplete='off'></input>");
+						echo("<input type='text' name='subFields[]' autocomplete='off' required></input>");
 					}
 					echo("</td>");
 				}

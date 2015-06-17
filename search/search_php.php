@@ -53,6 +53,7 @@
 		{
 			$nFields = count($aFields);
 			
+			echo("<h1 align='left'>Search Results:</h1>");
 			echo("<p align='center'>You selected $nFields Fields: ");
 			for($i=0; $i < $nFields; $i++)
 			{
