@@ -13,6 +13,11 @@
 			</form>
 		</td>
 		<td id='t3'>
+			<form method='get' action='update.php'>
+    			<button type='submit'>Update</button>
+			</form>
+		</td>
+		<td id='t3'>
 			<form method='get' action='../index.php'>
     			<button type='submit'>Logout</button>
 			</form>
@@ -57,7 +62,11 @@
 	$q=$q.$aFields[count($aFields)-1].'="'.$subFields[count($aFields)-1].'"';
 	$q=$q." WHERE SNo=".$_SESSION['sno'].";";
 
-	$qry=mysqli_query($connect,$q);
+	if(!mysqli_query($connect,$q))
+	{
+		echo("Error description: " . mysqli_error($connect));
+		echo('<br><br>');
+	}
 	require('../display/display.php');
 	
 ?>

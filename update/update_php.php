@@ -153,9 +153,29 @@
 							<option value='SmartCardReader'>SmartCardReader</option>
 						</select>");
 					}
+					else if($aFields[$i]=='EMailID')
+					{
+						echo("<input type='email' name='subFields[]' required>");
+					}
+					else if($aFields[$i]=='WarrentyExp')
+					{
+						echo("<input type='date' name='subFields[]' required>");
+					}
+					else if($aFields[$i]=='PurchasedOn')
+					{
+						echo("<input type='date' name='subFields[]' required>");
+					}
+					else if($aFields[$i]=='DateofIssue')
+					{
+						echo("<input type='date' name='subFields[]' required>");
+					}
+					else if($aFields[$i]=='EMailID')
+					{
+						echo("<input type='email' name='subFields[]' required>");
+					}
 					else
 					{
-						echo("<input type='text' name='subFields[]'] autocomplete='off'></input>");
+						echo("<input type='text' name='subFields[]' autocomplete='off'></input>");
 					}
 					echo("</td>");
 				}
