@@ -1,7 +1,7 @@
 # My_Intern
-My Intern at Hitachi Solutions
+My Internship at Hitachi Solutions
 
-The Project is to create a Data Base, which only an authentic person can login. And the Data Base is to contain a Table similar to that of an excel sheet present in the assests folder.
+The Project is to create a Data Base, which only an authentic person can login. And the Data Base is to contain a Table similar to that of an excel sheet present in the assets folder.
 
 Goal is to make working DBMS where one can insert,delete and search for data in the table
 
@@ -29,4 +29,4 @@ If you want to try it out, here's what you would need to do.
 
 5. Now try it out.
 
-6. Do report if any bugs or imrovements is to be made. 
+6. Do report if any bugs or improvements is to be made. 
