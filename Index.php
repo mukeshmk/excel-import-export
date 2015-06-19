@@ -22,54 +22,62 @@
 			<a href="http://www.hitachi.co.in/" target="_blank">
   				<img src="assets/Hitachi%20Logo.jpg" alt="Hitachi Logo" style="border:0">
 			</a>	
-		</div>
-		<div class="row">
-  			<div class="col-sm-4"></div>
-  			<div class="col-sm-4">
-	  			<form name="loginform" action="login/login_exec.php" method="post" autocomplete="off">
-  					<table align="center" class="table table-hover table-condensed">
-  						<tr>
-    						<td>
-								<!--the code bellow is used to display the message of the input validation-->
-								 <?php
-									if(isset($_SESSION['ERRMSG_ARR'])&&is_array($_SESSION['ERRMSG_ARR'])&&count($_SESSION['ERRMSG_ARR'])>0) 
-									{
-										echo '<ul class="err">';
-										foreach($_SESSION['ERRMSG_ARR'] as $msg) 
-										{
-											echo '<li>',$msg,'</li>'; 
-										}
-										echo '</ul>';
-										unset($_SESSION['ERRMSG_ARR']);
-									}
-								?>
-							</td>
-  						</tr>
-  						<tr>
-    						<td><div align="right">Username</div></td>
-    						<td><input name="username" type="text" /></td>
-  						</tr>
-  						<tr>
-    						<td><div align="right">Password</div></td>
-    						<td><input name="password" type="password" /></td>
-  						</tr>
-  						<tr>
-    						<td><div align="center"></div></td>
-    						<td><input name="" type="submit" value="login" /></td>
-  						</tr>
-						<tr>
-							<td></td>
-							<td>
-								<form method='get' action='create_user/create_user.html' align="center">
-									<button type='submit'>Create User</button>
-								</form>
-							</td>
-						</tr>
-					</table>
+		</div>		
+		<form name="loginform" action="login/login_exec.php" method="post" autocomplete="off" role="form">
+    		<div class="row">		
+				<div class="col-sm-4"></div>   
+      			<div class="col-sm-offset-0 col-sm-4">
+        			 <?php
+						if(isset($_SESSION['ERRMSG_ARR'])&&is_array($_SESSION['ERRMSG_ARR'])&&count($_SESSION['ERRMSG_ARR'])>0) 
+						{
+							echo('<div class="alert alert-danger">');
+							echo '<ul class="err">';
+							foreach($_SESSION['ERRMSG_ARR'] as $msg) 
+							{
+								echo '<li><strong>Error! </strong>',$msg,'</li>'; 
+							}
+							echo '</ul>';
+							unset($_SESSION['ERRMSG_ARR']);
+							echo('</div>');
+						}
+					?>
+				<div class="col-sm-4"></div>
+      			</div>
+			</div>	
+			<div class="row">
+				<div class="col-sm-4"></div>
+      			<label class="control-label col-sm-1" for="email">Username:</label>
+   				<div class="col-sm-3">
+        			<input type="text" class="form-control" name="username" placeholder="Enter User Name">
+      			</div>
+				<div class="col-sm-4"></div>
+    		</div>	
+			<div class="row">
+				<div class="col-sm-4"></div>
+				<label class="control-label col-sm-1" for="pwd">Password:</label>
+      			<div class="col-sm-3">          
+        			<input type="password" class="form-control" name="password" placeholder="Enter password">
+      			</div>
+				<div class="col-sm-4"></div>
+    		</div>	
+			<div class="row">        
+      			<div class="col-sm-offset-5 col-sm-7">
+       				<button name="" type="submit" class="btn btn-success">
+						<span class="glyphicon glyphicon-log-in"></span>
+					Log In</button>
+				</div>
+    		</div>
+  		</form>
+		<div class="row">        
+      		<div class="col-sm-offset-5 col-sm-2">
+       			<form method='post' action='create_user/create_user.html' align="center" role="form">									
+					<button type='submit' class=' btn btn-primary'>
+						<span class="glyphicon glyphicon-user"></span>
+					Create User</button>
 				</form>
-  			</div>
-  			<div class="col-sm-4"></div>
-		</div>
+      		</div>
+			<div class="col-sm-5"></div>
+    	</div>
 	</div>
 </body>
 </html>
