@@ -140,7 +140,7 @@
 					<td>
 						<select name="Asstyp" required>
 							<option value="">Select...</option>
-							<option value="Desktop">Destop</option>
+							<option value="Desktop">Desktop</option>
 							<option value="Laptop">Laptop</option>
 							<option value="Printer">Printer</option>
 							<option value="Scanner">Scanner</option>
