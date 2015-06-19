@@ -18,11 +18,21 @@
 	</head>
 <body>
 	<div class="container">
-		<div style="text-align: center;">
-			<a href="http://www.hitachi.co.in/" target="_blank">
-  				<img src="assets/Hitachi%20Logo.jpg" alt="Hitachi Logo" style="border:0">
-			</a>	
-		</div>		
+		<div class="row">           
+			<div style="text-align: right;" class="col-sm-8">
+				<a href="http://www.hitachi.co.in/" target="_blank">
+  					<img src="assets/Hitachi%20Logo.jpg" alt="Hitachi Logo" style="border:0">
+				</a>	
+			</div>
+			<div class="col-sm-3"></div>
+			<div class="col-sm-1">
+       			<form method='post' action='create_user/create_user.html' align="center" role="form">									
+					<button type='submit' class=' btn btn-primary'>
+						<span class="glyphicon glyphicon-user"></span>
+					Create User</button>
+				</form>
+    		</div> 
+		</div>
 		<form name="loginform" action="login/login_exec.php" method="post" autocomplete="off" role="form">
     		<div class="row">		
 				<div class="col-sm-4"></div>   
@@ -68,16 +78,7 @@
 				</div>
     		</div>
   		</form>
-		<div class="row">        
-      		<div class="col-sm-offset-5 col-sm-2">
-       			<form method='post' action='create_user/create_user.html' align="center" role="form">									
-					<button type='submit' class=' btn btn-primary'>
-						<span class="glyphicon glyphicon-user"></span>
-					Create User</button>
-				</form>
-      		</div>
-			<div class="col-sm-5"></div>
-    	</div>
+		
 	</div>
 </body>
 </html>
