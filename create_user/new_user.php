@@ -1,3 +1,10 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.min.css">
+		<script src="../bootstrap-3.3.5-dist/jquery.min.js"></script>
+  		<script src="../bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+	</head>
 <?php
 	$mem_id=$_POST['mem_id'];
 	$umn=$_POST['unm'];
@@ -29,8 +36,7 @@
 	$d="SELECT * FROM member WHERE mem_id = $mem_id;";
 	$d1=mysqli_query($connect,$d);
 
-	echo"<html>
-		<title>User Details</title>
+	echo"<title>User Details</title>
 		<head>
 			<h1 align='center'>Login Created Successfully!!</h1>
 			<h3 align='center'>Cheack your Details again just incase.</h3>
@@ -75,12 +81,11 @@
 	}
     echo "</table>
 		</body>
+			<br>
 			<form method='get' action='../index.php' align='center'>
-    			<button type='submit'>Login</button>
-			</form>
-		</html>";
+    			<button type='submit' class='btn btn-success'>Login</button>
+			</form>";
 
 	mysqli_close($connect);
-
-
 ?>
+</html>
