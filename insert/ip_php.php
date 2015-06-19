@@ -10,44 +10,26 @@
 		<script src='../bootstrap-3.3.5-dist/jquery.min.js'></script>
   		<script src='../bootstrap-3.3.5-dist/js/bootstrap.min.js'></script>
 	</head>
-	<body>
-		<p align='left'>
-		<table id='t1'>
-		<tr id='t2'>
-		<td id='t3'>
-			<form method='get' action='../home.php'>
-    			<button type='submit'>Home</button>
-			</form>
-		</td>
-		<td id='t3'>
-			<form method='get' action='input_page.php'>
-    			<button type='submit'>Insert</button>
-			</form>
-		</td>
-		<td id='t3'>
-			<form method='get' action='../index.php'>
-    			<button type='submit'>Logout</button>
-			</form>
-		</td>
-		<tr>
-		</table>
-		</p>
-	</body>
-	<style>
-		table#t1
-		{
-			border: None
-		}
-		td#t2
-		{
-			border: None
-		}
-		td#t3
-		{
-			border: None
-		}
-	</style>
-</html>
+	<nav class="navbar navbar-inverse">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<a class="navbar-brand" href="http://www.hitachi.co.in/" target="_blank">Hitachi Solutions</a>
+    		</div>
+    		<div>
+      			<ul class="nav navbar-nav">
+        			<li><a href="../home.php">Home</a></li>
+        			<li class="active"><a href="input_page.php">Insert</a></li>
+        			<li><a href="../display/disp.php">Display</a></li>
+					<li><a href="../search/search.php">Search</a></li>
+					<li><a href="../update/update.php">Update</a></li>
+					<li><a href="../delete/del_disp.php">Delete</a></li>
+      			</ul>
+				<ul class="nav navbar-nav navbar-right">
+        			<li><a href='../index.php'><span class="glyphicon glyphicon-off"></span> Log Out</a></li>
+      			</ul>
+    		</div>
+  		</div>
+	</nav>
 <?php
 	
 	$sno=$_POST['sno'];

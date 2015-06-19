@@ -2,58 +2,37 @@
 	require_once('../login/auth.php');
 ?>
 <html>
-<head>
-	<meta charset='utf-8'>
+	<head>
+		<meta charset='utf-8'>
    		<meta name='viewport' content='width=device-width, initial-scale=1'>
   		<link rel='stylesheet' href='../bootstrap-3.3.5-dist/css/bootstrap.min.css'>
 		<script src='../bootstrap-3.3.5-dist/jquery.min.js'></script>
   		<script src='../bootstrap-3.3.5-dist/js/bootstrap.min.js'></script>
-	<title>Update</title>
-	<p align='right'>
-		<table id='t1' align='right'>
-		<tr id='t2'>
-		<td id='t3'>
-			<form method='get' action='../home.php'>
-    			<button type='submit'>Home</button>
-			</form>
-		</td>
-		<td id='t3'>
-			<form method='get' action='../index.php'>
-    			<button type='submit'>Logout</button>
-			</form>
-		</td>
-		<tr>
-		</table>
-	</p>
-<!-- define some style elements-->
-<style>
-	label,a 
-	{
-		font-family : Arial, Helvetica, sans-serif;
-		font-size : 12px; 
-	}
-	table, th, td 
-	{
- 		border: 1px solid black;
-		white-space:nowrap
-	}
-	table#t1
-	{
-		border: None
-	}
-	tr#t2
-	{
-		border: None
-	}
-	td#t3
-	{
-		border: None
-	}
-</style>	
-</head>
+		<title>Update</title>
+	</head>
+	<nav class="navbar navbar-inverse">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<a class="navbar-brand" href="http://www.hitachi.co.in/" target="_blank">Hitachi Solutions</a>
+    		</div>
+    		<div>
+      			<ul class="nav navbar-nav">
+        			<li><a href="../home.php">Home</a></li>
+        			<li><a href="../insert/input_page.php">Insert</a></li>
+        			<li><a href="../display/disp.php">Display</a></li>
+					<li><a href="../search/search.php">Search</a></li>
+					<li class="active"><a href="update.php">Update</a></li>
+					<li><a href="../delete/del_disp.php">Delete</a></li>
+      			</ul>
+				<ul class="nav navbar-nav navbar-right">
+        			<li><a href='../index.php'><span class="glyphicon glyphicon-off"></span> Log Out</a></li>
+      			</ul>
+    		</div>
+  		</div>
+	</nav>	
 <?php require('../display/display.php'); ?>
 <body>
-
+<div class="container">
 <form action="update_php.php" method="post" align="center">
 	<label for='formFields[]'></label><br>
 	<h3 align="center">Enter SNo of the recoed to be updated:-</h3>
@@ -100,7 +79,16 @@
 		</tr>
 	</table>
 	<br>
-	<input type="submit" name="formSubmit" value="Update" >
+		<div class="row">
+			<div class="col-sm-5"></div>
+			<div class="col-sm-1">
+				<button type="submit" name="formSubmit" align='center' class="btn btn-danger">
+					<span class="glyphicon glyphicon-edit"></span>Update
+				</button>
+			</div>
+			<div class="col-sm-6"></div>
+		</div>
+	</div>
 </form>
 
 </body>

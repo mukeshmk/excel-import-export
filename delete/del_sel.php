@@ -10,23 +10,28 @@
 		<script src='../bootstrap-3.3.5-dist/jquery.min.js'></script>
   		<script src='../bootstrap-3.3.5-dist/js/bootstrap.min.js'></script>
 	</head>
+	<nav class="navbar navbar-inverse">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<a class="navbar-brand" href="http://www.hitachi.co.in/" target="_blank">Hitachi Solutions</a>
+    		</div>
+    		<div>
+      			<ul class="nav navbar-nav">
+        			<li><a href="../home.php">Home</a></li>
+        			<li><a href="../insert/input_page.php">Insert</a></li>
+        			<li><a href="../display/disp.php">Display</a></li>
+					<li><a href="../search/search.php">Search</a></li>
+					<li><a href="../update/update.php">Update</a></li>
+					<li class="active"><a href="del_disp.php">Delete</a></li>
+      			</ul>
+				<ul class="nav navbar-nav navbar-right">
+        			<li><a href='../index.php'><span class="glyphicon glyphicon-off"></span> Log Out</a></li>
+      			</ul>
+    		</div>
+  		</div>
+	</nav>
 	<body>
-	<p align='right'>
-		<table id='t1' align='right'>
-		<tr id='t2'>
-		<td id='t3'>
-			<form method='get' action='../home.php'>
-    			<button type='submit'>Home</button>
-			</form>
-		</td>
-		<td id='t3'>
-			<form method='get' action='../index.php'>
-    			<button type='submit'>Logout</button>
-			</form>
-		</td>
-		<tr>
-		</table>
-		<style>
+	<style>
 		table#t1
 		{
 			border: None
@@ -39,8 +44,7 @@
 		{
 			border: None
 		}
-		</style>
-	</p>
+	</style>
 		
 <?php
 	if(isset($_POST['formSubmit'])) 
@@ -129,7 +133,9 @@
 					<input type="text" name="del"required>
 				</td>
 				<td id='t3'>
-					<button type="submit">Delete</button>	
+					<button type="submit" class="btn btn-danger">
+						<span class="glyphicon glyphicon-edit"></span> Delete
+					</button>	
 				</td>
 			</tr>
 		</table>

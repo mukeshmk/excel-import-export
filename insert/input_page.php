@@ -11,22 +11,27 @@
   		<script src='../bootstrap-3.3.5-dist/js/bootstrap.min.js'></script>
 	</head>
 	
-	<p align="right">
-		<table>
-		<tr>
-		<td>
-			<form method='get' action='../home.php'>
-    			<button type='submit'>Home</button>
-			</form>
-		</td>
-		<td>
-			<form method='get' action='../index.php'>
-    			<button type='submit'>Logout</button>
-			</form>
-		</td>
-		<tr>
-		</table>
-	</p>
+	<nav class="navbar navbar-inverse">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<a class="navbar-brand" href="http://www.hitachi.co.in/" target="_blank">Hitachi Solutions</a>
+    		</div>
+    		<div>
+      			<ul class="nav navbar-nav">
+        			<li><a href="../home.php">Home</a></li>
+        			<li class="active"><a href="input_page.php">Insert</a></li>
+        			<li><a href="../display/disp.php">Display</a></li>
+					<li><a href="../search/search.php">Search</a></li>
+					<li><a href="../update/update.php">Update</a></li>
+					<li><a href="../delete/del_disp.php">Delete</a></li>
+      			</ul>
+				<ul class="nav navbar-nav navbar-right">
+        			<li><a href='../index.php'><span class="glyphicon glyphicon-off"></span> Log Out</a></li>
+      			</ul>
+    		</div>
+  		</div>
+	</nav>
+	
 	<h1 align="center">Fill out these fields:</h1>
     <body>
         <form action="ip_php.php" method="post" autocomplete="off">
@@ -194,7 +199,16 @@
 			</td>
 			</tr>
 			</table>
-			<p align="center"><button type="submit">Submit</button></p>
+			<div class="row"><p><br></p></div>
+			<div class="row">
+				<div class="col-sm-6"></div>
+				<div class="col-sm-1">
+					<button type="submit" class="btn btn-info">
+						<span class="glyphicon glyphicon-plus-sign"></span> Insert
+					</button>	
+				</div>
+				<div class="col-sm-5"></div>
+			</div>
         </form>
     </body>
 </html>
