@@ -47,19 +47,20 @@
 			}
 			</style>
 		</head>
-		<body>";
-	echo "<table align = 'center'>
+		<body>
+		<div class='container'>";
+	echo "<table align = 'center' class='table table-hover table-bordered table-condensed'>
 		
 	<tr>
 		
-	<th>MemID</th>
-	<th>UserNAme</th>
+	<th>Mem ID</th>
+	<th>User Name</th>
 	<th>Password</th>
-	<th>FirstName</th>
-	<th>LastName</th>
+	<th>First Name</th>
+	<th>Last Name</th>
 	<th>Address</th>
 	<th>Contact</th>
-	<th>EMail</th>
+	<th>EMail ID</th>
 	<th>Gender</th>
 	
 	</tr>";
@@ -80,6 +81,7 @@
 		</tr>";
 	}
     echo "</table>
+		</div>
 		</body>
 			<br>
 			<form method='get' action='../index.php' align='center'>
