@@ -11,7 +11,7 @@
   		<script src='../bootstrap-3.3.5-dist/js/bootstrap.min.js'></script>
 	</head>
 	
-	<nav class="navbar navbar-inverse">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
   		<div class="container-fluid">
     		<div class="navbar-header">
       			<a class="navbar-brand" href="http://www.hitachi.co.in/" target="_blank">Hitachi Solutions</a>
@@ -31,7 +31,7 @@
     		</div>
   		</div>
 	</nav>
-	
+	<br><br><br>
 	<h1 align="center">Fill out these fields:</h1>
     <body>
         <form action="ip_php.php" method="post" autocomplete="off">
