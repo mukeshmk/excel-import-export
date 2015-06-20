@@ -39,7 +39,7 @@
 			<tr>
 				
 			<td>
-			<table style="width:0%" align="center">
+			<table style="width:0%" align="center" class="table table-bordered table-hover table-condensed">
 				<tr>
 					<td>S.No:-</td>						
 					<td><input type="text" name="sno" required></td>
@@ -118,7 +118,7 @@
 			<td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 				
 			<td>
-			<table style="width:0%" align="right">
+			<table style="width:0%" align="right" class="table table-bordered table-hover table-condensed">
 				<tr>
 					<td>Seat No:-</td>
 					<td><input type="text" name="SeatNo" required></td>
@@ -199,7 +199,7 @@
 			</td>
 			</tr>
 			</table>
-			<div class="row"><p><br></p></div>
+			<div class="row"></div>
 			<div class="row">
 				<div class="col-sm-6"></div>
 				<div class="col-sm-1">
