@@ -32,12 +32,14 @@
 			</style>
 		</head>
 		<body>";
+	
+	echo("<br><br><br>");
 
 	echo("<form action='../export/export.php' method='get'>
 			<button type='submit' class='btn btn-success'><span class='glyphicon glyphicon-file'></span> Export Table</button>
 			</form>");
 
-	echo "<table align = 'left' width='0%''><tr><th>S.No.</th><th>Seat No.</th><th>Employee ID.</th><th>Employee Name</th><th>Location</th><th>Floor/Block</th><th>Status</th><th>Asset Tag No.</th><th>Host Name</th><th>Asset Type</th><th>Brand</th><th>Model</th><th>Serial No.</th><th>Associated Devices</th><th>Associated Devices Seital No.</th><th>Hard Disk</th><th>Memory</th><th>Processor</th><th>Operating System</th><th>Purchased ON</th><th>Invoice Details</th><th>Vendor Details</th><th>Warrenty Expiry</th><th>Date of Issue</th><th>Contact No.</th><th>Email ID</th><th>Remarks</th></tr>";
+	echo "<table align = 'left' width='0%' class='table table-condensed table-hover table-bordered'><thead><tr><th>S.No.</th><th>Seat No.</th><th>Employee ID.</th><th>Employee Name</th><th>Location</th><th>Floor/Block</th><th>Status</th><th>Asset Tag No.</th><th>Host Name</th><th>Asset Type</th><th>Brand</th><th>Model</th><th>Serial No.</th><th>Associated Devices</th><th>Associated Devices Seital No.</th><th>Hard Disk</th><th>Memory</th><th>Processor</th><th>Operating System</th><th>Purchased ON</th><th>Invoice Details</th><th>Vendor Details</th><th>Warrenty Expiry</th><th>Date of Issue</th><th>Contact No.</th><th>Email ID</th><th>Remarks</th></tr></thead><tbody>";
 
     // output data of each row
     while($row=mysqli_fetch_array($d1)) 
@@ -73,7 +75,8 @@
 		<td>".$row["Remarks"]."</td>
        	</tr>";
 	}
-    echo "</table>
+    echo "</tbody>
+		</table>
 		</body>
 		</html>";
 ?>
