@@ -10,7 +10,7 @@
 		<script src='../bootstrap-3.3.5-dist/jquery.min.js'></script>
   		<script src='../bootstrap-3.3.5-dist/js/bootstrap.min.js'></script>
 	</head>
-	<nav class="navbar navbar-inverse">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
   		<div class="container-fluid">
     		<div class="navbar-header">
       			<a class="navbar-brand" href="http://www.hitachi.co.in/" target="_blank">Hitachi Solutions</a>
@@ -30,6 +30,7 @@
     		</div>
   		</div>
 	</nav>
+	<br><br><br>
 	<body>
 	<style>
 		table#t1
