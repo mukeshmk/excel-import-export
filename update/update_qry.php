@@ -3,14 +3,14 @@
 ?>
 <html>
 	<head>
-		<title>Update Selection</title>
+		<title>Update Page</title>
 		<meta charset='utf-8'>
    		<meta name='viewport' content='width=device-width, initial-scale=1'>
   		<link rel='stylesheet' href='../bootstrap-3.3.5-dist/css/bootstrap.min.css'>
 		<script src='../bootstrap-3.3.5-dist/jquery.min.js'></script>
   		<script src='../bootstrap-3.3.5-dist/js/bootstrap.min.js'></script>
 	</head>
-	<nav class="navbar navbar-inverse">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
   		<div class="container-fluid">
     		<div class="navbar-header">
       			<a class="navbar-brand" href="http://www.hitachi.co.in/" target="_blank">Hitachi Solutions</a>

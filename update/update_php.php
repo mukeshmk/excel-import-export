@@ -11,7 +11,7 @@
   		<script src='../bootstrap-3.3.5-dist/js/bootstrap.min.js'></script>
 	</head>
 	
-	<nav class="navbar navbar-inverse">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
   		<div class="container-fluid">
     		<div class="navbar-header">
       			<a class="navbar-brand" href="http://www.hitachi.co.in/" target="_blank">Hitachi Solutions</a>
@@ -32,6 +32,7 @@
   		</div>
 	</nav>	
 <body>
+	<br><br><br>
 	<div class="container">
 <?php
 	$sno=$_POST['sno'];
@@ -77,9 +78,13 @@
 					{
      					border: 1px solid black;
 					}
+					#t1
+					{
+						border: 0px;
+					}
 				</style>
 				</head>
-				<h1 align='left'>Enter new values to be updated :</h1>
+				<h1 align='center'>Enter new values to be updated :</h1>
 				<body>");
 	
 			echo("<table align='center'>");
@@ -104,7 +109,7 @@
 				echo("<tr>");
 				for($i=0; $i < $nFields; $i++)
 				{	
-					echo("<td>");
+					echo("<td id='t1'>");
 					if($aFields[$i]=="Location")
 					{
 						echo("<select name='subFields[]' required>
@@ -186,6 +191,7 @@
 		}
 	}
 ?>
+		<br>
 		<div class="row">
 			<div class="col-sm-5"></div>
 			<div class="col-sm-1">

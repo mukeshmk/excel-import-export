@@ -10,7 +10,7 @@
   		<script src='../bootstrap-3.3.5-dist/js/bootstrap.min.js'></script>
 		<title>Update</title>
 	</head>
-	<nav class="navbar navbar-inverse">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
   		<div class="container-fluid">
     		<div class="navbar-header">
       			<a class="navbar-brand" href="http://www.hitachi.co.in/" target="_blank">Hitachi Solutions</a>
@@ -38,10 +38,16 @@
 	<h3 align="center">Enter SNo of the recoed to be updated:-</h3>
 	<p><input type='text' name='sno' autocomplete="off" required></input></p>
 	<h3 align='center'>Select the Fields that you want to Update</h3>
-	<table id="t1"align='center'>
-		<tr id="t2">
-		<td id="t3">
-		<table align='left'>
+	<style>
+	table, th, td 
+	{
+    	border: 0px solid black;
+	}
+</style>
+	<table align='center'>
+		<tr>
+		<td>
+		<table align='left' class="table table-hover table-bordered table-condensed">
 			<tr><td><input type="checkbox" name="formFields[]" value="SNo" checked></td><td>S.No</td></tr>
 			<tr><td><input type="checkbox" name="formFields[]" value="EmployeeID"></td><td>Employee ID</td></tr>
 			<tr><td><input type="checkbox" name="formFields[]" value="Location"></td><td>Location</td></tr>
@@ -59,8 +65,8 @@
 		</table>
 		</td>
 			
-		<td id="t3">
-		<table align='right'>
+		<td>
+		<table align='right'class="table table-hover table-bordered table-condensed">
 			<tr><td><input type="checkbox" name="formFields[]" value="SeatNo"></td><td>Seat No.</td></tr>
 			<tr><td><input type="checkbox" name="formFields[]" value="EmployeeName"></td><td>Employee Name</td></tr>
 			<tr><td><input type="checkbox" name="formFields[]" value="Floor"></td><td>Floor/Block</td></tr>
