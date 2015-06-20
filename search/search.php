@@ -73,7 +73,7 @@
 			<tr><td><input type="checkbox" name="formFields[]" value="VendorDetails"></td><td>Vendor Details</td></tr>
 			<tr><td><input type="checkbox" name="formFields[]" value="DateofIssue"></td><td>Date of Issue</td></tr>
 			<tr><td><input type="checkbox" name="formFields[]" value="EMailID"></td><td>EMail ID</td></tr>
-			<tr><td><input type="checkbox" name="" value=""></td><td></td></tr>
+			<tr><td><input type="checkbox" name="" value="" disabled></td><td></td></tr>
 		</table>
 		</td>
 		</tr>

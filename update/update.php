@@ -63,8 +63,7 @@
 			<tr><td><input type="checkbox" name="formFields[]" value="ContactNo"></td><td>Contact No.</td></tr>
 			<tr><td><input type="checkbox" name="formFields[]" value="Remarks"></td><td>Remarks</td></tr>
 		</table>
-		</td>
-			
+		</td>	
 		<td>
 		<table align='right'class="table table-hover table-bordered table-condensed">
 			<tr><td><input type="checkbox" name="formFields[]" value="SeatNo"></td><td>Seat No.</td></tr>
@@ -80,6 +79,7 @@
 			<tr><td><input type="checkbox" name="formFields[]" value="VendorDetails"></td><td>Vendor Details</td></tr>
 			<tr><td><input type="checkbox" name="formFields[]" value="DateofIssue"></td><td>Date of Issue</td></tr>
 			<tr><td><input type="checkbox" name="formFields[]" value="EMailID"></td><td>EMail ID</td></tr>
+			<tr><td><input type="checkbox" name="" value="" disabled></td><td></td></tr>
 		</table>
 		</td>
 		</tr>
