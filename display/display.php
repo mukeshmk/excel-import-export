@@ -32,8 +32,6 @@
 			</style>
 		</head>
 		<body>";
-	
-	echo("<br><br><br>");
 
 	echo("<form action='../export/export.php' method='get'>
 			<button type='submit' class='btn btn-success'><span class='glyphicon glyphicon-file'></span> Export Table</button>

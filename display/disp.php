@@ -28,4 +28,7 @@
   		</div>
 	</nav>
 </html>
-<?php require"display.php"?>
+<?php 
+	echo("<br><br><br>");
+	require"display.php"
+?>

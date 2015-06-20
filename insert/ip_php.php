@@ -10,7 +10,7 @@
 		<script src='../bootstrap-3.3.5-dist/jquery.min.js'></script>
   		<script src='../bootstrap-3.3.5-dist/js/bootstrap.min.js'></script>
 	</head>
-	<nav class="navbar navbar-inverse">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
   		<div class="container-fluid">
     		<div class="navbar-header">
       			<a class="navbar-brand" href="http://www.hitachi.co.in/" target="_blank">Hitachi Solutions</a>
@@ -105,6 +105,7 @@
 		echo("Error description: " . mysqli_error($connect));
 		echo('<br><br>');
 	}
+	echo("<br><br><br>");
 	require "../display/display.php";
 	mysqli_close($connect);
 ?>

@@ -29,7 +29,8 @@
       			</ul>
     		</div>
   		</div>
-	</nav>	
+	</nav>
+	<br><br><br>
 <?php require('../display/display.php'); ?>
 <body>
 <div class="container">

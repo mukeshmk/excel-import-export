@@ -57,6 +57,7 @@
 		echo("Error description: " . mysqli_error($connect));
 		echo('<br><br>');
 	}
+	echo("<br><br><br>");
 	require('../display/display.php');
 	
 ?>
