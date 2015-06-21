@@ -16,11 +16,22 @@
   		<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
 		<script src="bootstrap-3.3.5-dist/jquery.min.js"></script>
   		<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+		<style>
+			body 
+			{
+    			background-image: url("assets/bg.jpg");
+			}
+			form
+			{
+				color: white;
+			}
+		</style>
 	</head>
 <body>
 	<div class="container">
-		<div class="row">           
+		<div class="row">
 			<div style="text-align: right;" class="col-sm-8">
+				<br><br><br><br><br>
 				<a href="http://www.hitachi.co.in/" target="_blank">
   					<img src="assets/Hitachi%20Logo.jpg" alt="Hitachi Logo" style="border:0">
 				</a>	
@@ -54,7 +65,8 @@
 					?>
 				<div class="col-sm-4"></div>
       			</div>
-			</div>	
+			</div>
+			<br>
 			<div class="row">
 				<div class="col-sm-4"></div>
       			<label class="control-label col-sm-1" for="email">Username:</label>
