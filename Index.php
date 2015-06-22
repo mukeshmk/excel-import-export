@@ -82,7 +82,8 @@
         			<input type="password" class="form-control" name="password" placeholder="Enter password">
       			</div>
 				<div class="col-sm-4"></div>
-    		</div>	
+    		</div>
+			<br>
 			<div class="row">        
       			<div class="col-sm-offset-5 col-sm-7">
        				<button name="" type="submit" class="btn btn-success">
