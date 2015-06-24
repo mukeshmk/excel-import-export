@@ -135,7 +135,7 @@
 					<input type="text" name="del"required>
 				</td>
 				<td id='t3'>
-					<button type="submit" class="btn btn-danger" disabled>
+					<button type="submit" class="btn btn-danger">
 						<span class="glyphicon glyphicon-edit"></span> Delete
 					</button>	
 				</td>

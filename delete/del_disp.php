@@ -77,9 +77,27 @@
 		</td>
 		</tr>
 	</table>
-	<button type="submit" name="formSubmit" class="btn btn-primary">
-		<span class="glyphicon glyphicon-search"></span>Search	
+	<?php
+		if($_SESSION['SU']==FALSE)
+		{
+			echo'
+	<p align="center">Not a Super User</p>
+	<button type="submit" name="formSubmit" class="btn btn-primary" disabled>
+		<span title="Not A Super User">
+		<span class="glyphicon glyphicon-search"></span>Search
+		</span>
 	</button>
+				';
+		}
+		else
+		{
+			echo'
+	<button type="submit" name="formSubmit" class="btn btn-primary">
+		<span class="glyphicon glyphicon-search"></span>Search
+	</button>
+				';
+		}
+	?>
 </form>
 
 </body>
