@@ -9,6 +9,8 @@ delete prevalages to be given only to super user, (done)
 
 Superuser Account Creation, (new task)
 
+Make SNo in Assets and MemberID in members Optional and set as Auto-Increment (new task)
+
 if possible:-
 
 Importing data from excel sheet.
