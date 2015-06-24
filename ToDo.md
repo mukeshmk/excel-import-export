@@ -1,11 +1,11 @@
 To Do:-
 
 
-Superuser Accont,
+Superuser Accont, (done)
 
-update changes for certain columns to be changed,
+update permissions for certain columns to be changed, (done)
 
-delete prevalages to be given only yo super user
+delete prevalages to be given only to super user, (pending)
 
 
 if possible:-
