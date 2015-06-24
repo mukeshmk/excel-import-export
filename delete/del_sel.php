@@ -122,6 +122,7 @@
 	}
 ?>
 	<br><br>
+	<p align='center'>To delete a record Contact Super User</p>
 	<form action="del_php.php" method="post" autocomplete="off">
 		<table id='t1' align='center'>
 			<tr id='t2'>
@@ -134,7 +135,7 @@
 					<input type="text" name="del"required>
 				</td>
 				<td id='t3'>
-					<button type="submit" class="btn btn-danger">
+					<button type="submit" class="btn btn-danger" disabled>
 						<span class="glyphicon glyphicon-edit"></span> Delete
 					</button>	
 				</td>
