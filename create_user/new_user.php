@@ -25,7 +25,7 @@
 	$c="USE my_intern;";
 	$c1=mysqli_query($connect,$c);
 
-	$q1="INSERT INTO member VALUES('$mem_id','$umn','$pwrd','$fnm','$lnm','$add','$cont','$email','$gender');";
+	$q1="INSERT INTO member VALUES('$mem_id','$umn','$pwrd','$fnm','$lnm','$add','$cont','$email','$gender','FALSE');";
 	if(!mysqli_query($connect,$q1))
 	{
 		echo("Error description: " . mysqli_error($connect));
