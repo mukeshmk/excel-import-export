@@ -62,6 +62,7 @@
 			$_SESSION['SESS_MEMBER_ID'] = $member['mem_id'];
 			$_SESSION['SESS_FIRST_NAME'] = $member['username'];
 			$_SESSION['SESS_LAST_NAME'] = $member['password'];
+			$_SESSION['SU'] = $member['su'];
 			session_write_close();
 			header("location: ../home.php");
 			exit();

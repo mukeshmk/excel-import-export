@@ -21,7 +21,8 @@
   	 address varchar(100) NOT NULL,
   	 contact varchar(30) NOT NULL,
   	 emailid varchar(100) NOT NULL,
-	 gender varchar(10) NOT NULL
+	 gender varchar(10) NOT NULL,
+	 su boolean NOT NULL
 	)";
 
 	$result1=mysqli_query($connect,$qry1);
@@ -61,7 +62,7 @@
 	$result2=mysqli_query($connect,$qry2);
 
 
-	$q1="INSERT INTO member VALUES(0,'root','root','NULL','NULL','NULL','NULL','NULL','NULL');";
+	$q1="INSERT INTO member VALUES(0,'root','root','NULL','NULL','NULL','NULL','NULL','NULL',TRUE);";
 	$r=mysqli_query($connect,$q1);
 
 	mysqli_close($connect);
