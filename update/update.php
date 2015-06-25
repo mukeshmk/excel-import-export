@@ -39,7 +39,6 @@
 	<h3 align="center">Enter SNo of the recoed to be updated:-</h3>
 	<p><input type='text' name='sno' autocomplete="off" required></input></p>
 	<h3 align='center'>Select the Fields that you want to Update</h3>
-	<p>To Update the Disabled Fields contact Super User</p>
 	<style>
 	table, th, td 
 	{
@@ -92,6 +91,7 @@
 		else
 		{
 			echo'
+	<p>To Update the Disabled Fields contact Super User</p>
 	<table align="center">
 		<tr>
 		<td>
