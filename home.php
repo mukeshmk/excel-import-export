@@ -31,7 +31,7 @@
 						if($_SESSION['SU']==TRUE)
 						{
 							echo"
-					<li><a href='create_user/create_su.html'><span class='glyphicon glyphicon-user'></span> Create SU</a></li>
+					<li><a href='create_user/create_su.php'><span class='glyphicon glyphicon-user'></span> Create SU</a></li>
 							";
 						}
 					?>
