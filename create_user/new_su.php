@@ -1,5 +1,9 @@
 <?php
 	require_once('../login/auth.php');
+	if($_SESSION['SU']==FALSE)
+	{
+		die("<h1 align='center'> You can't access !! Will be reported !!</h1>");
+	}
 ?>
 <html>
 	<head>
