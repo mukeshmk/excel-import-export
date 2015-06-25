@@ -1,3 +1,6 @@
+<?php
+	require_once('../login/auth.php');
+?>
 <html>
 	<head>
 		<title>Create Super User</title>
@@ -67,7 +70,7 @@
 		<div class="row">
 			<div class="col-sm-5"></div>
 				<div class="col-sm-1">
-					<form method="get" action="../Index.php"  align="center">
+					<form method="get" action="../home.php"  align="center">
 						<button type="submit" class="btn btn-info">
 							<span class="glyphicon glyphicon-arrow-left"></span> Back
 						</button>
