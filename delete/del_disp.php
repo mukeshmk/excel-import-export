@@ -11,7 +11,7 @@
 		<script src='../bootstrap-3.3.5-dist/jquery.min.js'></script>
   		<script src='../bootstrap-3.3.5-dist/js/bootstrap.min.js'></script>	
 </head>
-	<nav class="navbar navbar-inverse">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
   		<div class="container-fluid">
     		<div class="navbar-header">
       			<a class="navbar-brand" href="http://www.hitachi.co.in/" target="_blank">Hitachi Solutions</a>
@@ -32,7 +32,7 @@
   		</div>
 	</nav>
 <body>
-
+<br><br>
 <h1 align='center'>Select the Fields to Search and Delete</h1>
 <form action="del_sel.php" method="post" align="center">
 	<label for='formFields[]'>Select the Fields:</label><br>
@@ -81,7 +81,7 @@
 		if($_SESSION['SU']==FALSE)
 		{
 			echo'
-	<p align="center">Not a Super User</p>
+	<p align="center">Not a Super User - Cant Delete</p>
 	<button type="submit" name="formSubmit" class="btn btn-primary" disabled>
 		<span title="Not A Super User">
 		<span class="glyphicon glyphicon-search"></span>Search
