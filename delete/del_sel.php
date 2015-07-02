@@ -9,6 +9,20 @@
   		<link rel='stylesheet' href='../bootstrap-3.3.5-dist/css/bootstrap.min.css'>
 		<script src='../bootstrap-3.3.5-dist/jquery.min.js'></script>
   		<script src='../bootstrap-3.3.5-dist/js/bootstrap.min.js'></script>
+		<style>
+			table#t1
+			{
+				border: None
+			}
+			td#t2
+			{
+				border: None
+			}
+			td#t3
+			{
+				border: None
+			}
+		</style>
 	</head>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
   		<div class="container-fluid">
@@ -32,20 +46,6 @@
 	</nav>
 	<br><br><br>
 	<body>
-	<style>
-		table#t1
-		{
-			border: None
-		}
-		td#t2
-		{
-			border: None
-		}
-		td#t3
-		{
-			border: None
-		}
-	</style>
 		
 <?php
 	if(isset($_POST['formSubmit'])) 
