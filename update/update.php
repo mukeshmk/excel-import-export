@@ -9,12 +9,6 @@
 		<script src='../bootstrap-3.3.5-dist/jquery.min.js'></script>
   		<script src='../bootstrap-3.3.5-dist/js/bootstrap.min.js'></script>
 		<title>Update</title>
-		<style>
-			table, th, td 
-			{
-    			border: 0px solid black;
-			}
-		</style>
 	</head>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
   		<div class="container-fluid">
@@ -45,6 +39,12 @@
 	<h3 align="center">Enter SNo of the recoed to be updated:-</h3>
 	<p><input type='text' name='sno' autocomplete="off" required></input></p>
 	<h3 align='center'>Select the Fields that you want to Update</h3>
+	<style>
+	table, th, td 
+	{
+    	border: 0px solid black;
+	}
+</style>
 	<?php 
 		if($_SESSION['SU']==TRUE)
 		{

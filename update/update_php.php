@@ -9,16 +9,6 @@
   		<link rel='stylesheet' href='../bootstrap-3.3.5-dist/css/bootstrap.min.css'>
 		<script src='../bootstrap-3.3.5-dist/jquery.min.js'></script>
   		<script src='../bootstrap-3.3.5-dist/js/bootstrap.min.js'></script>
-		<style>
-			table, th, td 
-			{
-     			border: 1px solid black;
-			}
-			#t1
-			{
-				border: 0px;
-			}
-		</style>
 	</head>
 	
 	<nav class="navbar navbar-inverse navbar-fixed-top">
@@ -82,7 +72,19 @@
 			$_SESSION['qur']=$d;
 			
 			$d1=mysqli_query($connect,$d);
-			echo("<h1 align='center'>Enter new values to be updated :</h1>
+			echo("<head>
+				<style>
+					table, th, td 
+					{
+     					border: 1px solid black;
+					}
+					#t1
+					{
+						border: 0px;
+					}
+				</style>
+				</head>
+				<h1 align='center'>Enter new values to be updated :</h1>
 				<body>");
 	
 			echo("<table align='center'>");

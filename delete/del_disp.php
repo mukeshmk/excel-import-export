@@ -10,7 +10,7 @@
   		<link rel='stylesheet' href='../bootstrap-3.3.5-dist/css/bootstrap.min.css'>
 		<script src='../bootstrap-3.3.5-dist/jquery.min.js'></script>
   		<script src='../bootstrap-3.3.5-dist/js/bootstrap.min.js'></script>	
-	</head>
+</head>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
   		<div class="container-fluid">
     		<div class="navbar-header">
