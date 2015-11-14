@@ -7,6 +7,7 @@
 ?>
 <html>
 	<head>
+		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
   		<link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.min.css">
 		<script src="../bootstrap-3.3.5-dist/jquery.min.js"></script>
@@ -43,8 +44,8 @@
 	$d="SELECT * FROM member WHERE mem_id = $mem_id;";
 	$d1=mysqli_query($connect,$d);
 
-	echo"<title>User Details</title>
-		<head>
+	echo"<head>
+			<title>Super User Details</title>
 			<h1 align='center'>Login Created Successfully!!</h1>
 			<h3 align='center'>Cheack your Details again just incase.</h3>
 			<style>
