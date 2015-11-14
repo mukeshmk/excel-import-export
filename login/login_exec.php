@@ -4,7 +4,6 @@
  
 	//Include database connection details
 	require_once('connection.php');
- 
 	//Array to store validation errors
 	$errmsg_arr = array();
  
